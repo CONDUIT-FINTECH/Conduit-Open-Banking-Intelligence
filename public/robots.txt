@@ -1,0 +1,23 @@
+# https://www.robotstxt.org/robotstxt.html
+# Allow Google AdSense Crawler
+User-agent: Mediapartners-Google
+Allow: /
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /login
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /*?*
+
+# Allow general search engine crawlers
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /*?*
+
+# Sitemap Location
+Sitemap: https://maxcnfront.vercel.app/sitemap.xml
